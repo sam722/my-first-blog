@@ -10,9 +10,9 @@
     <body>
         <div class="page-header">
 	{% if user.is_authenticated %}
-{% for post in posts %}
+
 	  <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-{% endfor %}	
+
 	{% endif %}
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
